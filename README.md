@@ -78,7 +78,7 @@ Python
 
 Streamlit
 
-OpenAI GPT-4
+OpenAI GPT-3.5
 
 HuggingFace Transformers
 
