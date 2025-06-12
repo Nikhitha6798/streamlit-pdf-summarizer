@@ -1,0 +1,3 @@
+streamlit        # For the UI
+PyMuPDF          # For PDF text extraction
+openai           # To call OpenAI API for summarization
