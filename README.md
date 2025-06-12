@@ -47,8 +47,8 @@ streamlit_pdf_summarizer/
 
 1. **Create a `.env` file** (keep it private):
    ```env
-   OPENAI_API_KEY="your_openai_key"
-   OPENAI_ORG_ID="your_org_id"
+   OPENAI_API_KEY=your_openai_key
+   OPENAI_ORG_ID=your_org_id
 
   OR 
 
