@@ -50,6 +50,15 @@ streamlit_pdf_summarizer/
    OPENAI_API_KEY=your_openai_key
    OPENAI_ORG_ID=your_org_id
 
+  OR 
+
+  If you want to set environment variables temporarily for your terminal session (not recommended for permanent usage), you can run:
+ 
+  export OPENAI_API_KEY="sxxx"
+  export OPENAI_ORG_ID="xxx"
+   
+  This sets environment variables only for that terminal session.
+
 ---
 
 2. Install Dependencies
