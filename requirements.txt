@@ -1,3 +1,10 @@
 streamlit        # For the UI
 PyMuPDF          # For PDF text extraction
 openai           # To call OpenAI API for summarization
+python-dotenv  # For environment variable management
+
+transformers     # For text summarization using Hugging Face Transformers
+torch             # Required for running models from Hugging Face
+
+langchain>=0.1.0  # For advanced text processing and summarization
+faiss-cpu # For efficient similarity search

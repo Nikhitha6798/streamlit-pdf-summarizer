@@ -19,7 +19,7 @@ def extract_text(file):
         text += page.get_text()
     return text
 
-st.title("📄 Free PDF Summarizer & Q&A")
+st.title("Free PDF Summarizer & Q&A")
 
 uploaded_file = st.file_uploader("Upload a PDF file", type=["pdf"])
 if uploaded_file:
@@ -28,9 +28,9 @@ if uploaded_file:
 
     if st.button("Summarize"):
         if len(text) > 1000:
-            text = text[:1000]  # limit input for the model
+            text = text[:1000]  
         summary = summarizer(text, max_length=150, min_length=30, do_sample=False)[0]['summary_text']
-        st.subheader("📝 Summary")
+        st.subheader("Summary")
         st.write(summary)
 
     question = st.text_input("Ask a question based on the PDF content:")

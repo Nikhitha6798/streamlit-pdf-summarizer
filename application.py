@@ -16,13 +16,13 @@ client = OpenAI(
     organization=os.getenv("OPENAI_ORG_ID")
 )
 
-st.title("📄 PDF Summarizer & Q&A")
+st.title("PDF Summarizer & Q&A")
 
 # File upload
 uploaded_file = st.file_uploader("Upload a PDF file", type="pdf")
 
 if uploaded_file is not None:
-    st.success("✅ File uploaded successfully.")
+    st.success("File uploaded successfully.")
 
     # Extract PDF text
     text = ""
@@ -30,7 +30,7 @@ if uploaded_file is not None:
         for page in doc:
             text += page.get_text()
 
-    st.subheader("📖 Extracted Text Preview")
+    st.subheader("Extracted Text Preview")
     st.write(text)
 
     # 🔘 Summarize Button
@@ -46,7 +46,7 @@ if uploaded_file is not None:
             )
         
             summary = response.choices[0].message.content.strip()
-            st.markdown("### 📌 Summary")
+            st.markdown("### Summary")
             st.write(summary)
 
     # ❓ Question Input
