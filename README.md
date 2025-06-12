@@ -55,6 +55,7 @@ streamlit_pdf_summarizer/
   If you want to set environment variables temporarily for your terminal session (not recommended for permanent usage), you can run:
  
   export OPENAI_API_KEY="sxxx"
+  
   export OPENAI_ORG_ID="xxx"
    
   This sets environment variables only for that terminal session.
@@ -62,6 +63,7 @@ streamlit_pdf_summarizer/
 ---
 
 2. Install Dependencies
+   
    pip install -r requirements.txt
    
 ---
@@ -74,6 +76,7 @@ streamlit_pdf_summarizer/
 ---
 
 ### 🧪 Technologies Used
+
 Python
 
 Streamlit
@@ -89,6 +92,7 @@ RAG (Vector Search + LLM for contextual Q&A)
 ---
 
 📌 Notes
+
 Make sure your .env file is added to .gitignore.
 
 GitHub push protection will block attempts to push API keys—keep your secrets safe!
